@@ -21,16 +21,16 @@ functions:
           path: /
           method: GET
       - http:
-          path: /users
+          path: /user
           method: GET
       - http:
-          path: /users
+          path: /user
           method: POST
       - http:
-          path: /users/{id}
+          path: /user/{id}
           method: PUT
       - http:
-          path: /users/{id}
+          path: /user/{id}
           method: DELETE
           
 

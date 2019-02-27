@@ -22,6 +22,7 @@
     "serverless-http": "^1.9.1"
   },
   "devDependencies": {
+    "mysql": "^2.16.0",
     "serverless-offline": "^4.7.0"
   }
 }

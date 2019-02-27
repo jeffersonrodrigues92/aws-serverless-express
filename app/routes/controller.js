@@ -1,23 +1,21 @@
 'use strict';
 
-module.exports = app => {
+module.exports = application => {
 
-    app.get('/users', (req, res) => {
-        res.status(200).send({message: 'listing users'});
+    application.get('/user', (req, res) => {
+        var connection = application.config.database();
+        var userModel = application.app.models.userModel;
+        userModel.findAll(connection, function(error, result){
+            res.status(200).send({users: result});
+        });
     });
     
-    app.post('/users', (req, res) => {
-        res.status(201).send({message: 'creating a users'});
+    application.post('/user', (req, res) => {
+        var user = req.body;
+        var connection = application.config.database();
+        var userModel = application.app.models.userModel;
+        userModel.save(user, connection, function(error, result){    
+            res.status(201).send({users: 'user created'});
+        });
     });
-    
-    app.put('/users/:id', (req, res) => {
-        const id = req.params.id;
-        res.status(200).send({message: `update users ${id}`});
-    });
-    
-    app.delete('/users/:id', (req, res) => {
-        const id = req.params.id;
-        res.status(204).send({message: `delete users ${id}`});
-    });
-
 };

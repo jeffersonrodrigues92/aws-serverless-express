@@ -10,7 +10,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 consign()
-    .include('app/routes')
+    .include("app/routes")
+    .then("config/database.js")
+    .then("app/models")
     .into(app);
 
 module.exports = app;
