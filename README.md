@@ -11,11 +11,11 @@
 
 ## Installing dependencies 
 
-> npm install express --save
-> npm consign express --save
-> npm body-parser express --save
-> npm serverless-http express --save
-> npm serverless-offline --save-dev
+ npm install express --save
+ npm consign express --save
+ npm body-parser express --save
+ npm serverless-http express --save
+ npm serverless-offline --save-dev
 
 ##To run local
 
