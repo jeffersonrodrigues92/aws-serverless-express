@@ -19,10 +19,10 @@
     "body-parser": "^1.18.3",
     "consign": "^0.1.6",
     "express": "^4.16.4",
+    "pg": "^7.8.1",
     "serverless-http": "^1.9.1"
   },
   "devDependencies": {
-    "mysql": "^2.16.0",
     "serverless-offline": "^4.7.0"
   }
 }

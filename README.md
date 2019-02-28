@@ -5,6 +5,7 @@
 - consign
 - body-parser
 - serverless-http
+- pg
 
 ## Dependencies Dev
 - serverless-offline 
@@ -12,9 +13,10 @@
 ## Installing dependencies 
 
  > npm install express --save  
- > npm consign express --save  
- > npm body-parser express --save  
- > npm serverless-http express --save  
+ > npm install consign express --save  
+ > npm install body-parser express --save  
+ > npm installserverless-http express --save
+ > npm install pg --save  
  > npm serverless-offline --save-dev  
 
 ##To run local
@@ -43,7 +45,7 @@ http://localhost:3000/
 - Body-Parser: https://www.npmjs.com/package/body-parser
 - Serverless-Http: https://www.npmjs.com/package/serverless-http
 - Serverless-Offline: https://www.npmjs.com/package/serverless-offline
-
+- Postgres: https://www.npmjs.com/package/pg 
 
 
 

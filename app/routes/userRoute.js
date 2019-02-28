@@ -3,7 +3,6 @@
 module.exports = application => {
 
     application.get('/user', (req, res) => {
-        console.log(application.app.controllers);
         application.app.controllers.userController.findAll(application, req, res);
     });
     
